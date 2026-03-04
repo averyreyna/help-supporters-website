@@ -293,7 +293,31 @@ opacity: 0.8;
 
 @media (max-width: 640px) {
 .authors {
-    gap: var(--space-md);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+    justify-items: center;
+}
+
+.author {
+    width: 100%;
+    min-width: 0;
+}
+
+.author__avatar {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 0.25rem;
+}
+
+.author__name {
+    font-size: 0.7rem;
+    line-height: 1.2;
+}
+
+.author__affiliation {
+    font-size: 0.6rem;
+    line-height: 1.2;
 }
 
 .actions {
